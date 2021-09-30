@@ -36,3 +36,16 @@ marginwidth="0" leftmargin="0" hspace="0" style="margin:0; padding:0" bgcolor="<
 <script language="JavaScript" type="text/javascript" src="../js/wz_tooltip.js"></script>
 </body>
 </html>
+
+
+<!-- sample method to cleanup css -->
+
+var content = ['**/src/js/*.js', '**/src/html/*.html'];
+var css = ['**/src/css/*.css'];
+
+var options = {
+  // Will write purified CSS to this file.
+  output: './dist/purified.css'
+};
+
+purify(content, css, options);
